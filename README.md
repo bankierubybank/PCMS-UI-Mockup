@@ -3,6 +3,9 @@ Private Cloud Management System User Interface
 
 :point_right: :ok_hand: :sweat_drops:
 
+### Admin & User
+> index.html
+
 ### Admin:
 
 > overview.html
