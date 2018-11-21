@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script type="text/javascript" src="eventHandler.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="loading-bar/loading-bar.css"/>
+	<script type="text/javascript" src="loading-bar/loading-bar.js"></script>
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>PCMS</title>
+</head>
+<body>
+	<!-- Page Layout here -->
+	<div class="row">
+		<div class="col s12 m4 l3">
+			<!-- Grey navigation panel -->
+			<ul id="slide-out" class="sidenav">
+				<li><div class="user-view">
+					<div class="background">
+					</div>
+					<a href="#name"><span class="black-text name">Montree</span></a>
+				</div></li>
+				<li><a class="waves-effect" href="overview.html">Overview</a></li>
+				<li><a class="waves-effect" href="requestApproval.html">Request Approval</a></li>
+				<li><a class="waves-effect" href="vms.html">Virtual Machines</a></li>
+			</ul>
+			<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="small material-icons">menu</i></a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col s12 m8 l12">
+			<!-- Teal page content  -->
+			<div class="container">
+				<h1>Request</h1>
+				<table class="highlight">
+					<thead>
+						<tr>
+							<th>Requestor</th>
+							<th>Spec</th>
+							<th>Duration</th>
+							<th>Approve</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Aj.Srinual</td>
+							<td>
+								<p>CPU: 2 Cores</p>
+								<p>RAM: 4 GB</p>
+								<p>HDD: 250 GB</p>
+							</td>							
+							<td>01/01/2019 - 01/01/2020</td>
+							<td>
+								<!-- Modal Trigger -->
+								<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Approve</a>
+
+								<!-- Modal Structure -->
+								<div id="modal1" class="modal">
+									<div class="modal-content">
+										<h4>Current Resource Usage</h4>
+										<div class="row">
+											<div class="col s12 m4 l4">
+												<div
+												data-preset="fan"
+												class="ldBar label-center"
+												data-value="10"
+												></div>
+												<p>CPU Usage</p>
+											</div>
+											<div class="col s12 m4 l4">
+												<div
+												data-preset="fan"
+												class="ldBar label-center"
+												data-value="70"
+												></div>
+												<p>RAM Usage</p>
+											</div>
+											<div class="col s12 m4 l4">
+												<div
+												data-preset="fan"
+												class="ldBar label-center"
+												data-value="10"
+												></div>
+												<p>Storage Usage</p>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<a href="#!" class="modal-close waves-effect waves-green btn-flat">Approve</a>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+	</html>

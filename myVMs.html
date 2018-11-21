@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script type="text/javascript" src="eventHandler.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="loading-bar/loading-bar.css"/>
+	<script type="text/javascript" src="loading-bar/loading-bar.js"></script>
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>PCMS</title>
+</head>
+<body>
+	<!-- Page Layout here -->
+	<div class="row">
+		<div class="col s12 m4 l3">
+			<!-- Grey navigation panel -->
+			<ul id="slide-out" class="sidenav">
+				<li><div class="user-view">
+					<div class="background">
+					</div>
+					<a href="#name"><span class="black-text name">Aj.Chotipat</span></a>
+				</div></li>
+				<li><a class="waves-effect" href="myVMs.html">My VMs</a></li>
+				<li><a class="waves-effect" href="requestVM.html">Request</a></li>
+			</ul>
+			<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="small material-icons">menu</i></a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col s12 m8 l12">
+			<!-- Teal page content  -->
+			<div class="container">
+				<h1>My Virtual Machines</h1>
+				<div class="row">
+					<div class="col s12 m6">
+						<div class="card">
+							<div class="card-image">
+								<img src="images/vm1.jpg">
+								<span class="card-title">VM1</span>
+								<a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modal1"><i class="material-icons">edit</i></a>
+								<div id="modal1" class="modal">
+									<div class="modal-content">
+										<h4>Request an Extend Duration</h4>
+										<p>Duration</p>
+										<input type="text" class="datepicker" placeholder="Duration">
+									</div>
+									<div class="modal-footer">
+										<a href="#!" class="modal-close waves-effect waves-green btn-flat">Submit</a>
+									</div>
+								</div>
+							</div>
+							<div class="card-content">
+								<p>VM1</p>
+								<p>CPU: 2 Cores</p>
+								<p>RAM: 4 GB</p>
+								<p>HDD: 160 GB</p>
+								<p>Owner: Aj.Chotipat</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

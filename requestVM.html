@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script type="text/javascript" src="eventHandler.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="loading-bar/loading-bar.css"/>
+	<script type="text/javascript" src="loading-bar/loading-bar.js"></script>
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>PCMS</title>
+</head>
+<body>
+	<!-- Page Layout here -->
+	<div class="row">
+		<div class="col s12 m4 l3">
+			<!-- Grey navigation panel -->
+			<ul id="slide-out" class="sidenav">
+				<li><div class="user-view">
+					<div class="background">
+					</div>
+					<a href="#name"><span class="black-text name">Aj.Chotipat</span></a>
+				</div></li>
+				<li><a class="waves-effect" href="myVMs.html">My VMs</a></li>
+				<li><a class="waves-effect" href="requestVM.html">Request</a></li>
+			</ul>
+			<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="small material-icons">menu</i></a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col s12 m8 l12">
+			<!-- Teal page content  -->
+			<div class="container">
+				<h1>Request VM</h1>
+				<form class="col s12">
+					<div class="row">
+						<div class="col s12 m6">
+							<div class="input-field col s12">
+								<p>CPU</p>
+								<select>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								</select>
+							</div>
+						</div>
+						<div class="col s12 m6">
+							<div class="input-field col s12">
+								<p>Memory</p>
+								<input placeholder="Memory" id="memory" type="text" class="validate">
+								<select>
+									<option value="GB">GB</option>
+									<option value="MB">MB</option>
+								</select>
+							</div>
+						</div>
+						<div class="col s12 m6">
+							<div class="input-field col s12">
+								<p>Hard disk</p>
+								<input placeholder="Hard disk" id="harddisk" type="text" class="validate">
+								<select>
+									<option value="GB">GB</option>
+									<option value="MB">MB</option>
+								</select>
+							</div>
+						</div>
+						<div class="col s12 m6">
+							<div class="input-field col s12">
+								<p>OS</p>
+								<select>
+									<option value="ubuntu">Ubuntu</option>
+									<option value="freeBSD">FreeBSD</option>
+								</select>
+							</div>
+						</div>
+						<div class="col s12 m6">
+							<div class="input-field col s12">
+								<p>Duration</p>
+								<input type="text" class="datepicker" placeholder="Duration">
+							</div>
+						</div>
+						<a class="waves-effect waves-light btn">Request VM</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
