@@ -1,9 +1,8 @@
 # PCMS-UI
 Private Cloud Management System User Interface
 
-:point_right: :ok_hand: :sweat_drops:
-
 ### Admin & User
+
 > index.html
 
 ### Admin:
@@ -20,10 +19,8 @@ Private Cloud Management System User Interface
 
 > requestVM.html
 
-### Used: :kissing_heart:
+### Used:
 
 https://materializecss.com/
 
 https://loading.io/progress/
-
-:yellow_heart: :mouse:
