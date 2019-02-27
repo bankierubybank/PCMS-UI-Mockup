@@ -1,0 +1,48 @@
+body{
+	margin: 0;
+	background: #222222;
+	color: white;
+}
+nav{
+background-color: #1b1b1b;
+}
+a{
+	color: white;
+}
+input{
+	color: white;
+}
+.btn{
+	background-color: #539892;
+}
+#sidenav{
+	position: absolute;
+    top: 10px;
+    width: 44px;
+    height: 44px;
+    z-index: 700;
+    background-color: #1b1b1b;
+    font-size: 28px;
+}
+.fa{
+	margin-top: 15%;
+    text-align: center;
+    display: block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.datepicker-table-wrapper{
+	color: black;
+}
+.datepicker{
+	width: 50%;
+}
+.sidenav{
+    width: 20%;
+}
+#firstname{
+	padding-left: 1em;
+}
+#icon-size{
+	font-size: 32px;
+}

@@ -1,0 +1,25 @@
+body{
+  background: #539892;
+  height: 100%;
+  color: white;
+ }
+nav{
+  background-color: #222222;
+}
+span{
+	font-size: 1.25em;
+	padding-right: 1.5em;
+}
+input{
+  color: white;
+}
+.card{
+  margin-top: 20%;
+  background: #222222;
+}
+.btn{
+  background-color: #539892;
+}
+.container{
+  width: 35%;
+}
