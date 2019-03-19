@@ -4,17 +4,13 @@ body{
 	color: white;
 }
 nav{
-background-color: #1b1b1b;
+ background-color: #1b1b1b;
+}
+p{
+	padding: 0px;
 }
 a{
 	color: white;
-}
-input{
-	color: white;
-}
-.btn{
-	background-color: #539892;
-	margin-top: 1.25em;
 }
 #sidenav{
 	position: absolute;
@@ -31,14 +27,7 @@ input{
     display: block;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
-}
-.datepicker-table-wrapper{
-	color: black;
-}
-.datepicker{
-	width: 50%;
-}
-.sidenav{
+}.sidenav{
     width: 20%;
 }
 #firstname{

@@ -8,7 +8,7 @@
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<script type="text/javascript" src="eventHandler.js"></script>
-
+	<link rel="stylesheet" type="text/css" href="css/vms.css">
 	<link rel="stylesheet" type="text/css" href="loading-bar/loading-bar.css"/>
 	<script type="text/javascript" src="loading-bar/loading-bar.js"></script>
 
@@ -17,6 +17,18 @@
 	<title>PCMS</title>
 </head>
 <body>
+	<header>
+	<nav>
+	  <div class="nav-wrapper">
+	    <ul class="right hide-on-med-and-down">
+	      <li><i id="icon-size" class="large material-icons">notifications_none</i></li>
+	      <li><span id="firstname">IT Support</span></li>
+	      <!-- Dropdown Trigger -->
+	      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i id="icon-size" class="large material-icons">account_circle</i></a></li>
+	    </ul>
+	  </div>
+	</nav>
+	</header>
 	<!-- Page Layout here -->
 	<div class="row">
 		<div class="col s12 m4 l3">
@@ -31,7 +43,7 @@
 				<li><a class="waves-effect" href="requestApproval.html">Request Approval</a></li>
 				<li><a class="waves-effect" href="vms.html">Virtual Machines</a></li>
 			</ul>
-			<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="small material-icons">menu</i></a>
+			<a id="sidenav" class="sidenav-trigger" href="#sidr" data-target="slide-out" data-position="right" data-tooltip="Open side navbar"><i class="fa small material-icons">menu</i></a>
 		</div>
 	</div>
 
@@ -41,37 +53,50 @@
 			<div class="container">
 				<h1>Virtual Machines</h1>
 				<div class="row">
-					<div class="col s12 m6">
-						<div class="card">
-							<div class="card-image">
-								<img src="images/vm1.jpg">
-								<span class="card-title">VM1</span>
-								<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">edit</i></a>
-							</div>
-							<div class="card-content">
-								<p>VM1</p>
-								<p>CPU: 2 Cores</p>
-								<p>RAM: 4 GB</p>
-								<p>HDD: 160 GB</p>
-								<p>Owner: Aj.Chotipat</p>
-							</div>
-						</div>
-					</div>
-					<div class="col s12 m6">
-						<div class="card">
-							<div class="card-image">
-								<img src="images/vm1.jpg">
-								<span class="card-title">VM2</span>
-								<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">edit</i></a>
-							</div>
-							<div class="card-content">
-								<p>VM2</p>
-								<p>CPU: 1 Core</p>
-								<p>RAM: 2 GB</p>
-								<p>HDD: 80 GB</p>
-								<p>Owner: Aj.Teerapong</p>
-							</div>
-						</div>
+					<div class="col s12 m12">
+						<table class="highlight">
+						<thead>
+							<tr>
+								<th>Owner</th>
+								<th>Project Manager</th>
+								<th>Specs</th>
+								<th>Duration</th>
+								<th>View</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Aj.Srinual</td>
+								<td>Mr.Natthawat Sukprasoet [58070041]</td>
+								<td>
+									<p>CPU: 2 Cores</p>
+									<p>RAM: 4 GB</p>
+									<p>HDD: 250 GB</p>
+								</td>
+								<td>01/01/2562 - 01/01/2563</td>							
+								<td>
+									<!-- Modal Trigger -->
+									<a class="waves-effect waves-light btn modal-trigger" href="#modal1">View</a>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>Aj.Chotipat</td>
+								<td>Mr.Bank Sukprasoet [66070041]</td>
+								<td>
+									<p>CPU: 4 Cores</p>
+									<p>RAM: 8 GB</p>
+									<p>HDD: 500 GB</p>
+								</td>
+								<td>02/03/2562 - 01/05/2562</td>							
+								<td>
+									<!-- Modal Trigger -->
+									<a class="waves-effect waves-light btn modal-trigger" href="#modal1">View</a>
+								</td>
+							</tr>
+						</tbody>
+						</table>
 					</div>
 				</div>
 			</div>

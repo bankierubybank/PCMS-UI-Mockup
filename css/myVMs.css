@@ -12,6 +12,9 @@ p{
 a{
 	color: white;
 }
+table{
+	margin-top: 1rem;
+}
 #sidenav{
 	position: absolute;
     top: 10px;

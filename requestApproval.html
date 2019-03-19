@@ -5,6 +5,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!--Import materialize.css-->
 	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/requestApprove.css">
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<script type="text/javascript" src="eventHandler.js"></script>
@@ -14,9 +15,21 @@
 
 	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>PCMS</title>
+	<title>Request Approve VM </title>
 </head>
 <body>
+	<header>
+	<nav>
+	  <div class="nav-wrapper">
+	    <ul class="right hide-on-med-and-down">
+	      <li><i id="icon-size" class="large material-icons">notifications_none</i></li>
+	      <li><span id="firstname">IT Support</span></li>
+	      <!-- Dropdown Trigger -->
+	      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i id="icon-size" class="large material-icons">account_circle</i></a></li>
+	    </ul>
+	  </div>
+	</nav>
+	</header>
 	<!-- Page Layout here -->
 	<div class="row">
 		<div class="col s12 m4 l3">
@@ -31,7 +44,7 @@
 				<li><a class="waves-effect" href="requestApproval.html">Request Approval</a></li>
 				<li><a class="waves-effect" href="vms.html">Virtual Machines</a></li>
 			</ul>
-			<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="small material-icons">menu</i></a>
+			<a id="sidenav" class="sidenav-trigger" href="#sidr" data-target="slide-out" data-position="right" data-tooltip="Open side navbar"><i class="fa small material-icons">menu</i></a>
 		</div>
 	</div>
 
